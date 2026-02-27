@@ -110,6 +110,4 @@ class InvalidTokenError(Exception):
             token_name: Имя переменной окружения с токеном
             message: Описание ошибки
         """
-        self.token_name = token_name
-        self.message = message
         super().__init__(f"{message}: {token_name}")
